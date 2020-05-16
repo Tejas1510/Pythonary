@@ -1,7 +1,7 @@
 
 """""""""""""""""""""""""""""""""""""
 Name of the problem:Apple and Oranges
-Link to the problem:https://www.hackerrank.com/challenges/apple-and-orange/problem
+Link to the problem:https:"//www.hackerrank.com/challenges/apple-and-orange/problem"
 """""""""""""""""""""""""""""""""""""
 
 #!/bin/python3
