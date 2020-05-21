@@ -1,0 +1,60 @@
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Name of Question:Taum and B'day
+Link of Question:https://www.hackerrank.com/challenges/taum-and-bday/problem
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+import math
+import os
+import random
+import re
+import sys
+
+#
+# Complete the 'taumBday' function below.
+#
+# The function is expected to return a LONG_INTEGER.
+# The function accepts following parameters:
+#  1. INTEGER b
+#  2. INTEGER w
+#  3. INTEGER bc
+#  4. INTEGER wc
+#  5. INTEGER z
+#
+
+def taumBday(b, w, bc, wc, z):
+    if((bc==wc==z) or (z>bc and z>wc) or ((bc==wc) and z==0)):
+        sum=b*bc+w*wc
+        return sum
+    elif(bc>z and bc>wc):
+        sum1=w*wc+b*wc+b*z
+        sum2=w*wc+b*bc
+        return min(sum1,sum2)
+    elif(wc>z and wc>bc):
+        sum1=w*bc+b*bc+w*z
+        sum2=b*bc+w*wc
+        return min(sum1,sum2)
+
+
+
+if __name__ == '__main__':
+
+    t = int(input().strip())
+
+    for t_itr in range(t):
+        first_multiple_input = input().rstrip().split()
+
+        b = int(first_multiple_input[0])
+
+        w = int(first_multiple_input[1])
+
+        second_multiple_input = input().rstrip().split()
+
+        bc = int(second_multiple_input[0])
+
+        wc = int(second_multiple_input[1])
+
+        z = int(second_multiple_input[2])
+
+        result = taumBday(b, w, bc, wc, z)
+
+        print(result)
