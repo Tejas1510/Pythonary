@@ -1,7 +1,7 @@
-# """"""""""""""""""""""""""""""""""""""
-# Name of Question:Three way communications
-# Link of Question:https:https://www.codechef.com/problems/COMM3/
-# """""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""
+Name of Question:Three way communications
+Link of Question:https:https://www.codechef.com/problems/COMM3/
+"""""""""""""""""""""""""""""""""""""""
 t=int(input())
 for i in range(t):
     n=int(input())

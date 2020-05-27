@@ -1,7 +1,7 @@
-# """"""""""""""""""""""""""""""""""""""
-# Name of Question:Greed Puppy
-# Link of Question:https://www.codechef.com/problems/GDOG
-# """""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""
+Name of Question:Greed Puppy
+Link of Question:https://www.codechef.com/problems/GDOG
+"""""""""""""""""""""""""""""""""""""""
 t=int(input())
 for i in range(t):
     a=[]
