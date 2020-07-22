@@ -1,0 +1,17 @@
+n,k=map(int,input().split())
+r=n*2
+g=n*5
+b=n*8
+if(r%k==0):
+    r1=r//k
+else:
+    r1=(r//k)+1
+if(g%k==0):
+    g1=g//k
+else:
+    g1=(g//k)+1
+if(b%k==0):
+    b1=b//k
+else:
+    b1=(b//k)+1
+print(r1+g1+b1)         
