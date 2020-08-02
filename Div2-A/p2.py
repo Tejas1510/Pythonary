@@ -1,0 +1,10 @@
+n=int(input())
+a=list(map(int,input().split()))
+a1=[]
+a2=a
+count=0
+while(sum(a1)<=sum(a2)):
+    a1.append(max(a2))
+    a2.remove(max(a2))
+    count=count+1
+print(count)    
